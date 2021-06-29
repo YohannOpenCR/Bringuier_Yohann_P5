@@ -2,8 +2,9 @@ let host = 'http://localhost:3000/';
 let option_selected = 1;
 let cart_price = 0;
 
+
 function initProducts() { // Init. listes de produits (index.php)
-    fetch(host + 'api/cameras/')
+    fetch(host + '/api/cameras', cameraRoutes)
         .then(response => response.json())
         .catch((error) => {
             document.getElementsByClassName('catalog-content')[0].style.height = "400px";
@@ -11,7 +12,7 @@ function initProducts() { // Init. listes de produits (index.php)
         })
         .then((api_data) => { 
             let i = 0;
-            while(i < api_data.length) {
+            while (i < api_data.length) {
                 let product_item = document.createElement("a");
                 let img_item = document.createElement("img");
                 let price_item = document.createElement("div");

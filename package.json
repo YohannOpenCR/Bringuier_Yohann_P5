@@ -1,0 +1,23 @@
+{
+  "name": "bringuier_yohann_p5",
+  "version": "1.0.0",
+  "description": "Orinoco Projet P5 29062021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YohannOpenCR/Bringuier_Yohann_P5.git"
+  },
+  "author": "YohannOpenCR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YohannOpenCR/Bringuier_Yohann_P5/issues"
+  },
+  "homepage": "https://github.com/YohannOpenCR/Bringuier_Yohann_P5#readme",
+  "dependencies": {
+    "api": "^3.2.4",
+    "mongoose": "^5.13.0"
+  }
+}

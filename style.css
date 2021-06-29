@@ -5,7 +5,9 @@ body {
     margin: 0;
 }
 
-/* Navbar style */
+/*---------------------------------------------------------------- 
+                          Navbar style 
+----------------------------------------------------------------*/
 .navbar {
     box-shadow: 2px 4px 5px 0px rgba(62, 62, 62, 0.116);
     -webkit-box-shadow: 2px 4px 5px 0px rgba(62, 62, 62, 0);
@@ -72,8 +74,9 @@ body {
 }
 
 
-/*HERO*/
-
+/*--------------------------------------------------------------
+                            HERO
+----------------------------------------------------------------*/
 body,
 html {
   height: 100%;
@@ -116,8 +119,11 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 230px;
+  width: auto;
   transform: translate(-50%, -50%);
   color: white;
+  background-color: rgba(0, 0, 0, 0.418);
 }
 
 .hero-exclusions {
@@ -138,14 +144,14 @@ p {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  border: 5px solid black;
+  border: 2px solid rgba(255, 166, 0, 0.623);
   margin-left: -1px;
   margin-top: 5%;
   font-size: 8pt;
   letter-spacing: 5px;
   font-weight: bold;
   font-family: Geogia;
-  font-syle: italic;
+  font-style: italic;
 }
 
 .hero-text button:hover {
@@ -158,10 +164,11 @@ p {
 /*start of popup*/
 .exclusions {
   font-family: Georgia;
-  font-size: 8pt;
+  font-size: 18pt;
   letter-spacing: 1px;
   text-shadow: none;
   font-style: normal;
+  color: orange;
 }
 
 .box {
@@ -206,13 +213,14 @@ p {
 }
 
 .popup {
+  text-align: center;
   margin: 70px auto;
   padding: 20px;
   background: #fff;
   border-radius: 2px;
   width: 60%;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .popup h2 {
@@ -223,14 +231,14 @@ p {
 }
 
 .popup .close {
-  position: fixed;
+  position: absolute;
   top: 90px;
-  left: 50%;
+  left: 90%;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: rgba(255, 0, 0, 0.952);
 }
 .popup .close:hover {
   color: #a6a6a6;
@@ -273,8 +281,9 @@ a:active {
 }
 
 
-/*Accueil Produit*/
-/* Catalog content */
+/*--------------------------------------------------------------
+                        Accueil Produit
+----------------------------------------------------------------*/
 .catalog-content {
     position: relative;
     width: 100%;
@@ -353,7 +362,7 @@ a:active {
     margin: 1%;
     width: 98%;
     height: 55%;
-    background: url('../back-end/images/vcam_1.jpg');
+    background: url('../back-end/images/vcam_1');
     background-size: 100% 100%;
     border-radius: 5px;
 }
@@ -402,7 +411,7 @@ a:active {
     position: absolute;
     top: 3px; left: 7px;
     width: 25px; height: 25px;
-    background: url(../img/shop_icon.png) no-repeat;
+    background: url("") no-repeat;
     background-size: 100% 100%;
 }
 
