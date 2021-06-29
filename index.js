@@ -2,7 +2,7 @@ let host = 'http://localhost:3000/';
 let option_selected = 1;
 let cart_price = 0;
 
-function initProducts() { // Init. list of products (index.php)
+function initProducts() { // Init. listes de produits (index.php)
     fetch(host + 'api/cameras/')
         .then(response => response.json())
         .catch((error) => {
