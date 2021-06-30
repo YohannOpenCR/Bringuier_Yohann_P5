@@ -9,11 +9,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <link href="/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
+        
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
     </head>
 
-    <body onload="initProducts()">
+    <body onload="ProductId()">
         
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -33,7 +34,7 @@
                 <a class="nav-link" href="index.html">Nos produits</a>
               </li>
             </ul>
-              <a href="#" class="d-flex nav-cart">
+              <a href="/panier.html" class="d-flex nav-cart">
                 <span class="cart-label">Mon panier</span>
                 <img src="/img/shop_icon.png" alt="Mon panier">
               </a>
@@ -42,53 +43,55 @@
         </nav>
 
         <div class="product-viewer">
-            <div class="view-content">
-                <img id="view-img" src="Back_end/images/vcam_1.jpg" alt="Visualisation d'une caméra">
-                <div id="view-informations">
-                  <div class="viewer-head">
-                      <div id="view-name">&nbsp;</div>
-                  </div>
-                  <div id="view-desc"></div>
-                  <div class="view-options">
-                      <div class="item-option" onclick="productOption(1)" style="background-color: #333;">
-                          <div class="item-checked" id="item-checked-1"></div>
-                          <span id="item-option-1"></span>
-                      </div>
-                      <div class="item-option" onclick="productOption(2)">
-                          <div class="item-checked" id="item-checked-2"></div>
-                          <span id="item-option-2"></span>
-                      </div>
-                      <div class="item-option" onclick="productOption(3)">
-                          <div class="item-checked" id="item-checked-3"></div>
-                          <span id="item-option-3"></span>
-                      </div>
-                  </div>
-                  <div class="viewer-bottom">
-                    <div id="success-item">
-                      L'article a été ajouté à votre panier
+          <div class="view-content">
+              <img id="view-img" src="back-end/images/vcam_4.jpg" alt="Visualisation d'une caméra">
+              <div id="view-informations">
+                <div class="viewer-head">
+                    <div id="view-name">&nbsp;</div>
+                    
+                </div>
+                <div id="view-desc"></div>
+                <div class="view-options">
+                    <div class="item-option" onclick="productOption(1)" style="background-color: rgb(209, 68, 68);">
+                        <div class="item-checked" id="item-checked-1"></div>
+                        <span id="item-option-1"></span>
                     </div>
-                    <div id="manage-item">
-                      <div id="add-cart" onclick="addToCart()">Ajouter au panier</div>
-                      <div id="item-price">&nbsp;</div>
+                    <div class="item-option" onclick="productOption(2)">
+                        <div class="item-checked" id="item-checked-2"></div>
+                        <span id="item-option-2"></span>
                     </div>
+                    <div class="item-option" onclick="productOption(3)">
+                        <div class="item-checked" id="item-checked-3"></div>
+                        <span id="item-option-3"></span>
+                    </div>
+                </div>
+                <div class="viewer-bottom">
+                  <div id="success-item">
+                    L'article a été ajouté à votre panier
+                  </div>
+                  <div id="manage-item">
+                    <div id="add-cart" onclick="addToCart()">Ajouter au panier</div>
+                    <div id="item-price">&nbsp;</div>
                   </div>
                 </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
+      
+   
 
          <!-- Footer -->
          <div class="footer">
-            <a href="#">Conditions générales d'utilisation</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Conditions générales de vente</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Nos Garanties</a>
+            <a href="#">Conditions de vente</a>
             <br />
-            <span>&copy; Orinoco 2021 | E-commerce dédié aux produits digital - Tous droits réservés.</span>
-          </div>
+            <span>&copy; Orinoco 2021 | Site des produits vintage</span>
+          
     </body>
 
         <!--SCRIPT-->
         <script src="/bootstrap.bundle.js"></script>
         <script src="/index.js"></script>
-        <script src="/produit.js"></script>
         
 </html>

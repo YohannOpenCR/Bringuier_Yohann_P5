@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang=fr>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Orinoco - Appareil Photo Vintage </title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">3
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+
+
+    <body onload="MyCart()" class="bg-light">
+          
+      <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/img/big.png" alt="" width="102" height="90">
+            <h2>Votre Panier</h2>
+            <a href="/index.html" class="lead">Retourner à la boutique</a>
+          </div>
+      
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Votre Panier</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                  <div class="text-success">
+                    <h6 class="my-0">Promo code</h6>
+                    <small>EXAMPLECODE</small>
+                  </div>
+                  <span class="text-success">−$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
+      
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Promo code">
+                  <button type="submit" class="btn btn-secondary">Valider</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Votre adresse</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre nom.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre prénom.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="exemple@mail.com">
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre Email.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 rue de l'exemple" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre adresse.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Adresse complémentaire <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Bâtiment, Porte, Escalier ...">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Pays</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Choisir...</option>
+                      <option>France</option>
+                      <option>Andore</option>
+                      <option>Suisse</option>
+                      <option>Monaco</option>
+                      <option>Espagne</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selectionnez un Pays valide.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Code postal</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Code barre non valide.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">J'autorise que mes données soit utilisés par vos partenaires</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info" required>
+                  <label class="form-check-label" for="save-info">J'atteste la certitude de mes réponses</label>
+                  <div class="invalid-feedback">
+                    Veuillez valider la certitude de vos réponses.
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">Paiement</h4>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Carte Bleu</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Visa</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nom et prénom</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="Exemple Martin" required>
+                    <small class="text-muted">Nom complet figurant sur votre carte bancaire</small>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre nom.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Numéro de la carte bancaire</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="1234 4567 7890" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre numéro de carte.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="00/0000" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre numéro d'expiration'.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
+                    <div class="invalid-feedback">
+                      Vous avez oublié de mentionner votre numéro de CVV'
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Paiement</button>
+              </form>
+            </div>
+          </div>
+        </main><br><br>
+      </div>
+      
+      
+          <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      
+            <script src="form-validation.js"></script>
+        </body>
+      </html>
+      
+
+        <!--SCRIPT-->
+        <script src="/bootstrap.bundle.js"></script>
+        <script src="/index.js"></script>
+</html>
