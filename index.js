@@ -2,7 +2,11 @@ let host = 'http://localhost:3000/';
 let option_selected = 1;
 let cart_price = 0;
 
-function initProducts() { // Init. listes de produits (index.php)
+/* ----------------------------------------------------------
+                 Fonction Item page D'acceuil 
+-----------------------------------------------------------*/
+
+function initProducts() { 
     fetch(host + 'api/cameras/')
         .then(response => response.json())
         .catch((error) => {
@@ -17,28 +21,25 @@ function initProducts() { // Init. listes de produits (index.php)
                 let price_item = document.createElement("div");
                 let txt_item = document.createElement("div");
                 let buy_item = document.createElement("div");
-                // Create item of new product
+
+                /* Création Item Produit */
                 product_item.classList.add("product-item");
-                product_item.href = "product.html?id=" + api_data[i]['_id']; // Update link for view this product
+                product_item.href = "product.html?id=" + api_data[i]['_id'];
                 document.querySelector('.product-list').appendChild(product_item);
-                product_item.style.animationDelay = "0." + i*2 + "s"; // Animation stylé ;)
-                // Create and attach img of new product
+
+                /* ANIMATION ITEM */
+                product_item.style.animationDelay = "0." + i*2 + "s";
+                
+                
+                /* Image Produit */
                 img_item.classList.add("product-img");
-                img_item.src = api_data[i]['imageUrl']; // Update link of img
+                img_item.src = api_data[i]['imageUrl'];
                 product_item.appendChild(img_item);
-                // Create and attach price of new product
-                let price_int = api_data[i]['price']/100;
-                price_item.classList.add("product-price");
-                price_item.innerHTML = price_int + ".00€";
-                product_item.appendChild(price_item);
-                // Create, define and attach description of new product
+
+                /* Description produit */
                 txt_item.classList.add("product-desc");
                 txt_item.innerHTML = "<b>" + api_data[i]['name'] + "</b><br />" + api_data[i]['description'];
                 product_item.appendChild(txt_item);
-                // Create and attach 'Add to cart' button
-                buy_item.classList.add("product-buybtn");
-                buy_item.innerHTML = "Ajouter au panier";
-                product_item.appendChild(buy_item);
                 i++;
             }
         });
